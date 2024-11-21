@@ -39,6 +39,7 @@ ENV/
 **/archive/
 **/archives/
 **/*archive*/
+**/tests/
 
 # Logs
 *.log
