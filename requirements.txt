@@ -1,13 +1,28 @@
-# Incomplete Requirements
-python-arango==7.3.0
-httpx==0.27.2
-jsonpickle==3.3.0
-litellm==1.52.12
-loguru==0.7.2
-openai==1.55.0
-python-dotenv==1.0.1
-runpod==1.7.4
-SQLAlchemy==2.0.35
-tenacity==8.5.0
-tiktoken==0.7.0
-yaspin==3.1.0
+# Core dependencies
+python-arango==7.3.0  # For ArangoDB interactions
+runpod==1.7.4        # For RunPod container management
+httpx==0.27.2        # For async HTTP requests
+python-dotenv==1.0.1 # For environment variable management
+loguru==0.7.2        # For logging
+yaspin==3.1.0        # For terminal spinners
+tenacity==8.5.0      # For retry logic
+jsonpickle==3.3.0    # For JSON serialization/deserialization
+
+# LLM and ML dependencies
+litellm==1.52.12     # For LLM interactions
+openai==1.55.0       # OpenAI API support
+tiktoken==0.7.0      # For token counting
+transformers>=4.36.0 # For Hugging Face models
+torch>=2.0.0         # Required for transformers
+numpy>=1.24.0        # Required for various ML operations
+sqlalchemy==2.0.35   # For database operations
+
+# Development dependencies
+pytest>=7.0.0        # For testing
+black>=23.0.0        # For code formatting
+isort>=5.0.0        # For import sorting
+mypy>=1.0.0          # For type checking
+
+
+
+
